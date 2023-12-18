@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fpsm faculty</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(/images/CITed.jpg);
+            background-size: cover;
+        }
+        header {
+            display: flex;
+            background-color:darkred;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: space-around;
+        }
+        header img {
+            max-height: 50px;
+            margin-right: 10px;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            padding: 15px;
+            margin: 20px 0;
+            background-color: #555;
+            border-radius: 5px;
+        }
+        .ndnav{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 15px;
+            border-radius: 10px 10px 0 0;
+        }
+        nav a:hover {
+            background-color: #777;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            justify-content: space-around;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .roster-card {
+            width: 300px;
+            height: 550px;
+            background-color: burlywood;
+            border-radius: 10px;
+            margin: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+        .roster-card:hover .roster-inner {
+            transform: rotateY(180deg);
+        }
+        .roster-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            height: 100%;
+        }
+        .roster-front,
+        .roster-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .roster-front {
+            transform: rotateY(0deg);
+        }
+        .roster-back {
+            transform: rotateY(180deg);
+        }
+        .roster-img {
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .roster-details {
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            font-size: 15px;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        h2{
+             margin: 0;
+             font-size: 15px;
+             padding: 6px;
+        }
+        p{
+         padding: 5px;
+         font-size: 10px;
+        }   
+        .bio {text-align: left  ;
+            padding: 10px;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+ </head>
+ <body> 
+    <header>
+        <div>
+            <img src="LOGO/R.png" alt="">
+            <img src="LOGO/CIT.png" alt="">
+        </div>
+        <h1>COLLEGE OF INDUSTRIAL TECHNOLOGY</h1>
+        <nav>
+            <a href="admin.html">COLLEGE ADMINISTRATION</a>
+            <a href="home.html">HOME</a>
+        </nav>
+    </header>
+        <div>
+            <nav class="ndnav">
+                <a href="cadt.html">Faculty Profile Civil & Drafting Technology (CDT) Faculty</a>
+                <a href="fpsm.html">Food Processing & Service Mgt (FPSM) Faculty</a>
+                <a href="gt.html">Garments Technology (GT) Faculty</a>
+            </nav>
+        </div>
+    <section>
+        <div class="roster-card">
+            <div class="roster-inner">
+                <div class="roster-front">
+                    <img class="roster-img" img src="images/barolo-fpsm.jpg" alt="">
+                    <div class="roster-details">
+                        <h2>Mr. Ralph Kevin S. Barolo</h2>
+                        <p>MA Education, BSIT - Food Tech
+                            Program Coordinator, Paoay Campus</p>
+                    </div>
+                </div>
+                <div class="roster-back">
+                    <div class="roster-details">
+                        <h2>Ralph Kevin S. Barolo</h2>
+                        <p><strong>INFORMATION</strong></p>
+                        <div class="bio">
+                            <p>Date of Birth			:		January 13, 1992/p>
+                            <p>Place of Birth			:		Pinili, Ilocos Norte/p>
+                            <p>Age				:		28 years</p>
+                            <p>Civil Status			:		Single </p>
+                            <p>Father				:		Crispin M. Barolo Jr.</p>
+                            <p>Mother			:		Milagros S. Barolo</p>
+                            <p>Home Address			:		Bgy. 7 Badio, Pinili, Ilocos Norte</p>
+                            <p>Number of Years in Teaching	:		5</p>
+                            <p>License/Eligibility		:		Board of Professional Teachers
+                                    <br>Civil Service
+                                    <br>Board of Professional Teachers		
+                                    <br>Bread and Pastry Production NC II
+                                    <br>Food and Beverages Services NC II
+                                    <br>Bartending NC II</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="roster-card">
+            <div class="roster-inner">
+                <div class="roster-front">
+                    <img class="roster-img" img src="/images/Domingo-fpsm.jpg" alt="">
+                    <div class="roster-details">
+                        <h2>Prof. Fairie Anne A. Domingo</h2>
+                        <p>MAEd - THE, BSHT
+                            Coordinator, Extension
+                            Staff, FPIC</p>                    
+                    </div>
+                </div>
+                <div class="roster-back">
+                    <div class="roster-details">
+                        <h2>Fairie Anne A. Domingo</h2>
+                        <p><strong>INFORMATION</strong></p>
+                        <div class="bio">
+                            <p>Date of Birth			:		July 16, 1984</p>
+                            <p>Place of Birth			:		Magsingal, Ilocos Sur</p>
+                            <p>Age				:		35 years</p>
+                            <p>Civil Status			:		Married</p>
+                            <p>Spouse				:		Jay-ar M. Domingo</p>
+                            <p>Children			:		Julianna Felice A. Domingo</p>
+                            <p>Father				:		Fidel U. Acebedo</p>
+                            <p>Mother			:		Irma P. Acebedo</p>
+                            <p>Home Address			:		Bgy. 16-S Quiling Sur, Batac City</p>
+                            <p>Number of Years in Teaching	:		10 </p>
+                            <p>License/Eligibility		:		Board of Professional Teachers
+                                Career Service (CS) Professional (PD 907)
+                                Trainer’s Methodology (TM) Level I
+                                Bread and Pastry NC II</p>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="roster-card">
+            <div class="roster-inner">
+                <div class="roster-front">
+                    <img class="roster-img" img src="/images/Mandac-fpsm.jpg" alt="">
+                    <div class="roster-details">
+                        <h2>Ms. Judelyn R. Mandac</h2>
+                        <p>MAEd - TVE, BSIE - Food Tech
+                            Program Coordinator, FPSM</p>       
+                    </div>
+                </div>
+                <div class="roster-back">
+                    <div class="roster-details">
+                        <h2>Judelyn R. Mandac</h2>
+                        <p><strong>INFORMATION</strong></p>
+                        <div class="bio">
+                            <p>Date of Birth			:	July 29, 1990</p>
+                            <p>Place of Birth			:	Bacarra, Ilocos Norte</p>
+                            <p>Age				:	30</p>
+                            <p>Civil Status			:	Married</p>
+                            <p>Spouse				:	Dioadado Miguel Mandac</p>
+                            <p>Father				:	Virgilio Bartolome Ramoran</p>
+                            <p>Mother			:	Shirley dela Cruz Ramoran</p>
+                            <p>Home Address			:	Bgy. 30-B Laoag City, Laoag City</p>
+                            <p>Number of Years in Teaching	: 	6</p>
+                            <p>License/Eligibility		:	Board of Professional Teachers
+                                Cookery NC II
+                                Bread and Pastry Production NC II
+                                Food and Beverage Services NC II</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="roster-card">
+            <div class="roster-inner">
+                <div class="roster-front">
+                    <img class="roster-img" img src="/images/pablo-fpsm.jpg" alt="">
+                    <div class="roster-details">
+                        <h2>Dr. Teresita N. Pablo</h2>
+                        <p>EdD - Educ Mgt, MAEd, BSHT</p>                   
+                    </div>
+                </div>
+                <div class="roster-back">
+                    <div class="roster-details">
+                        <h2>Teresita N. Pablo</h2>
+                        <p><strong>INFORMATION</strong></p>
+                        <div class="bio">
+                            <p>Date of Birth			:		April 19, 1960</p>
+                            <p>Place of Birth			:		Claveria, Cagayan</p>
+                            <p>Age				:		60 years</p>
+                            <p>Civil Status			:		Married</p>
+                            <p>Father				:		Arsenio A. Novedo</p>
+                            <p>Mother			:		Herminia A. Novedo</p>
+                            <p>Husband			:		Medardo B. Pablo</p>
+                            <p>Children			:		Mark Madessey N. Pablo
+                                <br>Marlowe Adlei N. Pablo</p>
+                            <p>Home Address			:		Bgy. 16 Quiling Sur, Batac City, Ilocos Norte</p>
+                            <p>Number of Years in Teaching	:		22</p>
+                            <p>License/Eligibility		:		Licensed Cook (MC #10)
+                                TVET Trainer’s Methodology Level I 
+                                NC in Bread and Pastry Production II
+                                NC in Food Processing II
+                                NC in Cookery II
+                                NC in Housekeeping II
+                                National TVET Assessor (Commercial Cooking NC II)
+                                National TVET Assessor (Food Processing NC II)</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="roster-card">
+            <div class="roster-inner">
+                <div class="roster-front">
+                    <img class="roster-img" img src="/images/Sanculi-fpsm.jpg" alt="">
+                    <div class="roster-details">
+                        <h2>Dr. Felicitas P. Sanculi</h2>
+                        <p>PhD - Dev Educ, MAEd -TLE, BS Nutrition
+                            Chief, Food Production & Innovation Center</p>
+                    </div>
+                </div>
+                <div class="roster-back">
+                    <div class="roster-details">
+                        <h2>Dr. Felicitas P. Sanculi</h2>
+                        <p><strong>INFORMATION</strong></p>
+                        <div class="bio">
+                            <p>Date of Birth			:		November 01, 1966</p>
+                            <p>Place of Birth			:		Batac City, Ilocos Norte, Philippines</p>
+                            <p>Age				:		53 years</p>
+                            <p>Civil Status			:		Married</p>
+                            <p>Spouse				:		Edenson R. Sanculi</p>
+                            <p>Father				:		Kabunian D. Pasetes</p>
+                            <p>Mother			:		Eliza D. Pasetes</p>
+                            <p>Home Address			:		71 Corquera St. Brgy 10N Lacub 
+                                Batac City, Ilocos Norte</p>
+                            <p>Number of Years in Teaching	:		25 years</p>
+                            <p>Eligibility			:		Commercial Cooking NC III & NTTC
+                                Housekeeping  NC II & NTTC
+                                Cookery NC II & NTTC
+                                Food Processing NC II & NTTC
+                                Bread and Pastry Production NC II & NTTC</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <footer>
+        &COPY Jahanna Bea Lou
+    </footer>
+</body>
+ </html>

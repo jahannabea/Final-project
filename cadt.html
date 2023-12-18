@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadt faculty</title>    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(/images/CITed.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            display: flex;
+            background-color: darkred;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        header img {
+            max-height: 50px;
+            margin-right: 10px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            padding: 15px;
+            margin: 20px 0;
+            background-color: #555;
+            border-radius: 5px;
+        }
+        .ndnav{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            background-color: #555;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 15px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        nav a:hover {
+            background-color: #777;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            justify-content: space-around;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .roster-card {
+            width: 300px;
+            height: 550px;
+            background-color: burlywood;
+            border-radius: 10px;
+            margin: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+
+        .roster-card:hover .roster-inner {
+            transform: rotateY(180deg);
+        }
+
+        .roster-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            height: 100%;
+        }
+
+        .roster-front,
+        .roster-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .roster-front {
+            transform: rotateY(0deg);
+        }
+
+        .roster-back {
+            transform: rotateY(180deg);
+        }
+
+        .roster-img {
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .roster-details {
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            font-size: 15px;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        h2{
+            margin: 0;
+            font-size: 15px;
+            padding: 6px;
+        }
+        p{
+            padding: 5px;
+            font-size: 10px;
+        }
+        .bio {text-align: left  ;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="LOGO/R.png" alt="">
+            <img src="LOGO/CIT.png" alt="">
+        </div>
+        <h1>COLLEGE OF INDUSTRIAL TECHNOLOGY</h1>
+        <nav>
+            <a href="admin.html">COLLEGE ADMINISTRATION</a>
+            <a href="home.html">HOME</a>
+        </nav>
+    </header>
+        <div>
+            <nav class="ndnav">
+                <a href="cadt.html">Civil & Drafting Technology (CDT) Faculty</a>
+                <a href="fpsm.html">Food Processing & Service Mgt (FPSM) Faculty</a>
+                <a href="gt.html">Garments Technology (GT) Faculty</a>
+            </nav>
+        </div>
+    <section>
+        <div class="roster-card">
+            <div class="roster-inner">
+                <div class="roster-front">
+                    <img class="roster-img" img src="images/prof. Benjie Antonio-cadt.jpg" alt="">
+                    <div class="roster-details">
+                        <h2>Prof. Bengie A. Antonio</h2>
+                        <p>MAEd - Tech Ed, BSIT - DT
+                            Program Coordinator, CDT
+                            ETEEAP Internal Assessor (CDT)</p>
+                    </div>
+                </div>
+                <div class="roster-back">
+                    <div class="roster-details">
+                        <h2>Bengie A. Antonio</h2>
+                        <p><strong>INFORMATION</strong></p>
+                        <div class="bio">
+                            <p>Date of Birth:	February 28, 1982</p>
+                            <p>lace of Birth:	San Nicolas, Ilocos Norte/p>
+                            <p>Age	:		38 years</p>
+                            <p>Civil Status	:	Married</p>
+                            <p>Father	:	Benjamin M. Antonio</p>
+                            <p>Mother	:	Dionisia A. Antonio</p>
+                            <p>Wife		:	Arlene P. Antonio</p>
+                            <p>Children	:	Angelica Jane P. Antonio
+                                            Reauhan Blyte P. Antonio
+                                            Kylie Yzabelle P. Antonio</p>
+                            <p>Home Address	:	#227 Alcantara St. Bgy. 6 San Juan Bautista,
+                                                San Nicolas, Ilocos Norte</p>
+                            <p>Number of Years in Teaching	:		17</p>
+                            <p>License/Eligibility		:	PD 907 (Honor Graduate)
+                            <br> Drafting NC II</p>
+ 
+ 
+
+
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="roster-card">
+            <div class="roster-inner">
+                <div class="roster-front">
+                    <img class="roster-img" img src="/images/Bueno-cadt.jpg" alt="">
+                    <div class="roster-details">
+                        <h2>Prof. Mark Alvin D. Bueno</h2>
+                        <p>MAEd - TVE, BSIE - DT</p>                    
+                    </div>
+                </div>
+                <div class="roster-back">
+                    <div class="roster-details">
+                        <h2>Mark Alvin D. Bueno</h2>
+                        <p><strong>INFORMATION</strong></p>
+                        <div class="bio">
+                            <p>Date of Birth	:	May 7, 1992</p>
+                            <p>Place of Birth	:	Sarrat, Ilocos Norte, Philippines</p>
+                            <p>Age				:	27 years</p>
+                            <p>Civil Status	:	Married</p>
+                            <p>Father		:	Nestor A. Bueno</p>
+                            <p>Mother	:	Vilma D. Bueno</p>
+                            <p>Husband	:	Medardo B. Pablo</p>
+                            <p>Home Address	:	Barangay 21-A San Marcos, 
+                               <br>Sarrat, Ilocos Norte</p>
+                            <p>Number of Years in Teaching	:		7</p>
+                            <p>License/Eligibility		:		Board of Professional Teachers
+                                <br>National TVET Trainer’s Certificate
+                                <br>Trainer’s Methodology Level I
+                                <br>Accredited Competency Accreditor for Technical Drafting NC II
+                                <br>Technical Drafting NC II
+                                <br>Visual Graphic Design II
+                                <br>CSC PD 907</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="roster-card">
+            <div class="roster-inner">
+                <div class="roster-front">
+                    <img class="roster-img" img src="/images/Domingo-cadt.jpg" alt="">
+                    <div class="roster-details">
+                        <h2>Prof. Romeo J. Domingo Jr.</h2>
+                        <p>MAEd - Tech Ed, BSIE - DT
+                            Focal Person, Phys. Facilities Maintenance &
+                            Infrastructure Development</p>       
+                    </div>
+                </div>
+                <div class="roster-back">
+                    <div class="roster-details">
+                        <h2>Romeo J. Domingo Jr.</h2>
+                        <p><strong>INFORMATION</strong></p>
+                        <div class="bio">
+                            <p>Date of Birth	:	December 21, 1983</p>
+                            <p>Place of Birth	:	Batac, Ilocos Norte</p>
+                            <p>Age		:	36 years old</p>
+                            <p>Civil Status	:	Married </p>
+                            <p>Father		:	Romeo S. Domingo</p>
+                            <p>Mother	:	Zenaida J. Domingo</p>
+                            <p>Home Address	:	Bgy. 11, City of Batac , Ilocos Norte</p>
+                            <p>Work Station	:	MMSU-CIT</p>
+                            <p>Number of Years in Teaching	:	15 </p>
+                            <p>Eligibility		:	Career Service (Professional)
+                                <br>Technical Drafting NC II
+                                <br>Trainers’ Methodology Level I</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="roster-card">
+            <div class="roster-inner">
+                <div class="roster-front">
+                    <img class="roster-img" img src="/images/Salvador-cadt.jpg" alt="">
+                    <div class="roster-details">
+                        <h2>Dr. Robert A. Salvador</h2>
+                        <p>EdD - Ind Educ Mgt, MAEd - TVE, BSIE - DT
+                            Chief, ETEEAP</p>                   
+                    </div>
+                </div>
+                <div class="roster-back">
+                    <div class="roster-details">
+                        <h2>Robert A. Salvador</h2>
+                        <p><strong>INFORMATION</strong></p>
+                        <div class="bio">
+                            <p>Date of Birth :	December 12, 1983</p>
+                            <p>Place of Birt :	Bacarra, Ilocos Norte</p>
+                            <p>Age	:	36 years</p>
+                            <p>Civil Status	:	Married </p>
+                            <p>Father		:	Andres Ramon N. Salvador</p>
+                            <p>Mother	:	Glory A. Salvador</p>
+                            <p>Home Address		:	Bgy. 18 Santo Cristo II (Poblacion), 
+                                <br>Bacarra, Ilocos Norte</p>
+                            <p>Number of Years in Teaching	of Professional Teachers:	14		
+                                <br>Trainer’s Methodology Level 1
+                                <br>Technical Drafting NC II</p>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                  
+
+    <footer>
+        &COPY Jahanna Bea Lou
+    </footer>
+</body>
+</html>

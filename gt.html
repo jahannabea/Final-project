@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gt faculty</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(/images/CITed.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        header{
+            display: flex;
+            background-color: darkred;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: space-around;
+        }
+        header img {
+            max-height: 50px;
+            margin-right: 10px;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            padding: 15px;
+            margin: 20px 0;
+            background-color: #555;
+            border-radius: 5px;
+        }
+        .ndnav{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 15px;
+            border-radius: 10px 10px 0 0;
+        }
+        nav a:hover {
+            background-color: #777;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            justify-content: space-around;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .roster-card {
+            width: 300px;
+            height: 550px;
+            background-color: burlywood;
+            border-radius: 10px;
+            margin: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+        .roster-card:hover .roster-inner {
+            transform: rotateY(180deg);
+        }
+        .roster-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            height: 100%;
+        }
+        .roster-front,
+        .roster-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .roster-front {
+            transform: rotateY(0deg);
+        }
+        .roster-back {
+            transform: rotateY(180deg);
+        }
+        .roster-img {
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .roster-details {
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            font-size: 15px;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        h2{
+             margin: 0;
+             font-size: 15px;
+             padding: 6px;
+        }
+        p{
+             padding: 5px;
+             font-size: 10px;
+        }
+        .bio {text-align: left  ;
+            padding: 10px;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body> 
+    <header>
+        <div>
+            <img src="LOGO/R.png" alt="">
+            <img src="LOGO/CIT.png" alt="">
+        </div>
+        <h1>COLLEGE OF INDUSTRIAL TECHNOLOGY</h1>
+        <nav>
+            <a href="admin.html">COLLEGE ADMINISTRATION</a>
+            <a href="home.html">HOME</a>
+        </nav>
+    </header>
+        <div class="ndnav">
+            <nav>
+                <a href="cadt.html">Faculty Profile Civil & Drafting Technology (CDT) Faculty</a>
+                <a href="fpsm.html">Food Processing & Service Mgt (FPSM) Faculty</a>
+                <a href="gt.html">Garments Technology (GT) Faculty</a>
+            </nav>
+        </div>
+    <section>
+        <div class="roster-card">
+            <div class="roster-inner">
+                <div class="roster-front">
+                    <img class="roster-img" img src="/images/javier-gt.jpg" alt="">
+                    <div class="roster-details">
+                        <h2>Prof. Floribelle S. Javier</h2>
+                        <p>MA Education, BSIE - Garments Tech
+                            Program Coordinator, GT</p>
+                    </div>
+                </div>
+                <div class="roster-back">
+                    <div class="roster-details">
+                        <h2> Floribelle S. Javier</h2>
+                        <p><strong>INFORMATION</strong></p>
+                        <div class="bio">
+                            <p>Date of Birth			:	March 25, 1968	</p>
+                            <p>Place of Birth			:	Laoag City	</p>
+                            <p>Age				:	52	</p>
+                            <p>Civil Status			:	Married	</p>
+                            <p>Father				:	Florentino D. Sales (Deceased)</p>
+                            <p>Mother			:	Avelina J. Sui</p>
+                            <p>Brother			:	Fernando S. Sales</p>
+                            <p>Spouse				:	Lucas D. Javier, Jr.</p>
+                            <p>Children			:	Prince James S. Javier 
+                                <br>Armaigne Jhoy S. Javier</p>
+                            <p>Home Address			:	Brgy. 42 Apaya, Laoag City</p>
+                            <p>Work Station			:	Mariano Marcos State University
+                                College of Industrial Technology</p>
+                            <p>Number of Years in Teaching	:	25</p>
+                            <p>Eligibility			:	Board of Professional Teachers</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="roster-card">
+            <div class="roster-inner">
+                <div class="roster-front">
+                    <img class="roster-img" img src="/images/torres-gt.jpg" alt="">
+                    <div class="roster-details">
+                        <h2>Prof. Gloria T. Torres</h2>
+                        <p>MA Education, BSIE - Garments Tech
+                            ETEEAP Internal Assessor (GT)</p>                    
+                    </div>
+                </div>
+                <div class="roster-back">
+                    <div class="roster-details">
+                        <h2>Gloria T. Torres</h2>
+                        <p><strong>INFORMATION</strong></p>
+                        <div class="bio">
+                            <p>Date of Birth			:		July 19, 1970</p>
+                            <p>Place of Birth			:		Marcos, Ilocos Norte</p>
+                            <p>Age				:		49 years</p>
+                            <p>Civil Status			:		Married</p>
+                            <p>Father				:		Ricarte D. Tolentino</p>
+                            <p>Mother			:		Lourdes R. Ganal</p>
+                            <p>Spouse				: 		Vener A. Torres</p>
+                            <p>Child				:		Kevin Zeus T. Torres</p>
+                            <p>Home Address			:		Brgy. Pacifico Marcos, Ilocos Norte</p>
+                            <p>Work Station			:		College of Industrial technology</p>
+                            <p>Number of Years in Teaching :		25 years/p>
+                            <p>Eligibility			:		Professional examination for Teachers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <footer>
+        &COPY Jahanna Bea Lou
+    </footer>
+</body>
+</html>
